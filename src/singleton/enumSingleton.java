@@ -12,7 +12,7 @@ package singleton;
  *  枚举类：
  *      枚举类型在序列化时Java仅将枚举对象的name属性输出到结果中，
  *      反序列化的时候则是通过java.lang.Enum的valueOf方法来根据名字查找枚举对象。并不是通过构造函数创建新的实例
- * @create 2021-04-09-20:28
+ * @create 2021-04-09-20:28d
  */
 public enum enumSingleton {
     INSTANCE;
