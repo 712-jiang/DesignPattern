@@ -1,0 +1,12 @@
+package Bridge;
+
+/**
+ * @author 712
+ * @function:
+ * @create 2021/4/16 10:07
+ */
+public class WarmGift extends Gift{
+    public WarmGift(GiftImpl gimpl) {
+        this.gimpl = gimpl;
+    }
+}

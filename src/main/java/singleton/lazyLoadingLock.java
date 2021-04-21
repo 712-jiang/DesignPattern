@@ -16,7 +16,7 @@ public class lazyLoadingLock {
         if(INSTANCE == null){
             //用同步代码块
             //双重检查,比直接将synchronize添加到getInstance方法上更高效
-            synchronized (lazyLoadingLock.class){
+            synchronized (lazyLoadingLock.class){   //类只加载一次，当作synchronized的类锁
                 if(INSTANCE == null){
                     Thread.sleep(10);
                     INSTANCE = new lazyLoadingLock();
